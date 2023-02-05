@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- style.css -->
+	<link rel="stylesheet" href="output.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+	<title>Rock paper scissor</title>
+</head>
+
+<body class="font-poppin relative">
+	<!--  play game section  -->
+	<div
+		class="min-h-screen bg-gradient-to-r from-cyan-500 to-blue-500 font-poppin  absolute inset-0 transition ease-in duration-300 entry ">
+
+		<section class=" flex flex-col justify-center items-center min-h-screen ">
+			<h1 class="capitalize mb-10 text-3xl  text-emerald-50"> rock paper scissor <span>&#129321;</span></h1>
+
+			<a href="#game" role="buton" class=" text-2xl
+			uppercase  border border-white transition-all duration-100 ease-in-out   rounded-md   px-5 py-2  " id="btn">play</a>
+		</section>
+	</div>
+
+
+
+	<section
+		class="game p-2 bg-gradient-to-r from-cyan-500 to-blue-500 min-h-screen absolute inset-0 transition ease-in-out  duration-150 hidden ">
+
+		<!-- your choice -->
+
+		<div class="mt-5">
+			<div class="star text-2xl text-center p-2 mt-7 ">
+				<span class="user-result text-white text-3xl drop-shadow-lg text-center  " data-id="draw"></span>
+
+			</div>
+			<div class="cards flex justify-between mt-10 ">
+				<div
+					class="card u-btn w-24 h-24 border border-zinc-900 rounded-md text-2xl bg-white flex justify-center  items-center transition  duration-150 ease-in-out shadow-lg   "
+					data-id="rock">
+					&#129308;
+				</div>
+				<div
+					class="card u-btn w-24 h-24 border border-zinc-900 rounded-md text-2xl bg-white  flex justify-center items-center transition duration-150 ease-in-out shadow-lg "
+					data-id="paper">
+					&#129306;
+				</div>
+				<div
+					class="card u-btn w-24 h-24 border border-zinc-900 rounded-md text-2xl bg-white  flex justify-center items-center transition duration-150 ease-in-out shadow-lg"
+					data-id="scissor">
+					&#9996;
+				</div>
+			</div>
+			<h3 class="text-center mt-10 capitalize text-2xl text-white drop-shadow-lg ">
+				your choice...
+			</h3>
+		</div>
+
+
+
+		<!-- computer choice -->
+		<div class=>
+
+			<div class="star text-2xl text-center p-2 mt-7  ">
+				<span class="com-result text-white text-3xl drop-shadow-lg text-center  " data-id="draw" id="draw"></span>
+			</div>
+		</div>
+		<div class="cards flex justify-between mt-10 ">
+			<div
+				class="card c-btn w-24 h-24 border border-zinc-900 rounded-md text-2xl bg-white  flex justify-center items-center transition duration-150 ease-in-out shadow-lg "
+				data-id="rock">
+				&#129308;
+			</div>
+			<div
+				class="card c-btn w-24 h-24 border border-zinc-900 rounded-md text-2xl bg-white  flex justify-center items-center transition duration-150 ease-in-out shadow-lg"
+				data-id="paper">
+				&#129306;
+			</div>
+			<div
+				class="card c-btn w-24 h-24 border border-zinc-900 rounded-md text-2xl bg-white  flex justify-center items-center transition duration-150 ease-in-out shadow-lg"
+				data-id="scissor">
+				&#9996;
+			</div>
+		</div>
+		<h3 class="capitalize text-center mt-10 text-2xl text-white
+			 drop-shadow-lg">
+			computer...
+		</h3>
+		</div>
+
+	</section>
+
+	<!-- winning section -->
+	<section>
+		<h3
+			class=" won p-2 bg-gradient-to-r  from-cyan-500 to-blue-500 min-h-screen  transition ease-in-out  duration-150  justify-center items-center text-4xl capitalize text-white drop-shadow-2xl  absolute inset-0 hidden">
+			you won &#129395;
+		</h3>
+
+
+
+		<h3
+			class=" loss p-2 bg-gradient-to-r from-cyan-500 to-blue-500 min-h-screen absolute inset-0 transition ease-in-out  duration-150 justify-center items-center text-4xl capitalize text-white drop-shadow-2xl hidden">
+			you loss
+			&#128546;
+		</h3>
+	</section>
+
+	<!-- app.js -->
+	<script src="app.js"></script>
+
+</body>
+
+</html>
